@@ -1,0 +1,31 @@
+:root {
+  --color-red: #ff4545;
+  --color-blue: #4397ea;
+  --color-white: #ffffff;
+
+  --text-color: #15223e;
+
+  --card-blue: #7bc6ef;
+
+  --bg-color: #f6faff;
+
+  --gradient-red: linear-gradient(180deg, rgba(254,68,68,1) 0%, rgba(206,3,3,1) 95%);
+  --gradient-blue: linear-gradient(50deg, rgba(67,151,234,1) 0%, rgba(123,198,239,1) 100%);
+  --gradient-border: linear-gradient(50deg, rgba(123,198,239,1) 0%, rgba(67,151,234,1) 100%);
+
+  --font-family: 'Avenir Next Cyr';
+  --font-demi: bold;
+  --font-medium: 500;
+  --font-regular: normal;
+  --font-light: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-famil);
+  color: var(--text-color);
+}

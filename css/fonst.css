@@ -1,0 +1,44 @@
+@font-face {
+  font-display: swap;
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Light'), local('AvenirNextCyr-Light'),
+		url('../fonts/AvenirNextCyr-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+		url('../fonts/AvenirNextCyr-Demi.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Italic'), local('AvenirNextCyr-Italic'),
+		url('../fonts/AvenirNextCyr-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+		url('../fonts/AvenirNextCyr-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+		url('../fonts/AvenirNextCyr-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
