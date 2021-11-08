@@ -8,7 +8,7 @@ $(document).ready(function() {
     let menu = $(".menu");
     let burger = $('.burger-menu');
     if (menu.hasClass('active')) {
-      if ((!menu.is(e.target) && menu.has(e.target).length === 0) || burger.is(e.target)) {
+      if ((!menu.is(e.target) && menu.has(e.target).length === 0)) {
         menu.removeClass('active');
         burger.removeClass('active');
       }
@@ -19,6 +19,8 @@ $(document).ready(function() {
       }
     }
   });
+
+
 
   // END
 }); 
