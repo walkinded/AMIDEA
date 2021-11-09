@@ -735,3 +735,41 @@ li {
   font-weight: var(--font-medium);
   max-width: 300px;
 }
+
+/* ==================== FREE-CHECKUP ==================== */
+
+.free-checkup {
+  background: url(../img/bg-3.png) no-repeat center top / cover;
+  padding: 124px 0 75px;
+}
+.free-checkup .title {
+  max-width: 970px;
+  margin-bottom: 46px;
+}
+.free-checkup .title span {
+  text-transform: uppercase;
+  color: var(--card-blue);
+}
+.free-checkup .subtitle {
+  max-width: 566px;
+  font-weight: var(--font-demi);
+  margin-bottom: 49px;
+}
+.free-checkup__info {
+  display: flex;
+  gap: 20px;
+  max-width: calc(531px - 34px);
+  width: auto;
+  height: calc(125px - 56px);
+
+  background: var(--card-blue);
+  color: var(--color-white);
+  border-radius: 10px;
+
+  padding: 28px 17px;
+  margin-bottom: 45px;
+}
+.free-checkup__info img {
+  width: auto;
+  height: 36px;
+}
