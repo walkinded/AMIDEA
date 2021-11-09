@@ -20,7 +20,31 @@ $(document).ready(function() {
     }
   });
 
-
-
+/*==================== SLICK-SLIDER ==================== */ 
+  $('.slider').slick({
+    arrows: true,
+    dots: true,
+    slidesToShow: 3,
+    speed: 1000,
+    // autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1601,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          // speed: 1000,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          // speed: 1000,
+        }
+      },
+    ]
+  });
   // END
 }); 

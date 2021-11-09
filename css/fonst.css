@@ -1,6 +1,16 @@
 @font-face {
   font-display: swap;
 	font-family: 'Avenir Next Cyr';
+	src: url('AvenirNextCyr-Heavy.eot');
+	src: local('Avenir Next Cyr Heavy'), local('AvenirNextCyr-Heavy'),
+		url('../fonts/AvenirNextCyr-Heavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+	font-family: 'Avenir Next Cyr';
 	src: local('Avenir Next Cyr Light'), local('AvenirNextCyr-Light'),
 		url('../fonts/AvenirNextCyr-Light.woff') format('woff');
 	font-weight: 300;

@@ -6,15 +6,27 @@
     padding: 0 20px;
     width: auto;
   }
-  div .btns-wrap:first-of-type{
+  header .btns-wrap:first-of-type{
     display: none;
   }
 }
 
 @media screen and ( max-width: 1440px ) {
-  .box-container {
-    padding: 0 20px;
+  .stay-with-us__wrap {
+    flex-direction: column;
+  }
+  .stay-with-us__left {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+  }
+  .stay-with-us__left .left-item {
+    max-width: calc(420px - 64px);
     width: auto;
+    height: auto;
+  }
+  .stay-with-us__right {
+    justify-items: center;
+    gap: 20px;
   }
 }
 
@@ -35,6 +47,12 @@
   .what-treat__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .top-services .card-slider {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    /* margin: 0 10px; */
+  }
 }
 
 @media screen and ( max-width: 768px ) {
@@ -47,6 +65,7 @@
   }
   .main-content {
     max-width: 100%;
+    padding-bottom: 50px;
   }
   .navigation-side ul {
     display: flex;
@@ -57,10 +76,9 @@
     top: initial;
     right: 0;
     bottom: 0;
-    height: 500px;
+    height: 300px;
     width: 100%;
     background: var(--color-blue);
-    z-index: 1;
     transform: translateY(110%);
     transition: all 1s;
     display: flex;
@@ -69,11 +87,16 @@
   .menu.active {
     transform: translateY(0%);
   }
+  .menu-nav {
+    padding: 20px 20px 70px;
+    overflow-y: scroll;
+    max-height: 230px;
+  }
   .wave {
     left: initial;
     width: 100%;
     height: 100px;
-    top: -99px;
+    top: -80px;
   }
   .wave_img {
     background: url(../img/svg/Vector2.svg) repeat-x;
@@ -105,10 +128,32 @@
   .free-checkup {
     padding: 30px 0;
   }
+  .stay-with-us__left,
+  .stay-with-us__right {
+    grid-template-columns: 1fr;
+    justify-items: initial;
+    gap: 15px;
+  }
+  .stay-with-us__left .left-item {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .right-item {
+    max-width: 100%;
+    width: auto;
+  }
+  .gradient-icon_border {
+    min-width: 70px;
+    height: 70px;
+  }
+  .gradient-icon_border.gradient-icon::after {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media screen and ( max-width: 500px ) {
-  .btns-wrap a:not(.call-btn__icon) {
+  header .btns-wrap a:not(.call-btn__icon) {
     display: none;
   }
   header {
@@ -149,5 +194,28 @@
   .free-checkup .subtitle,
   .free-checkup__info {
     margin-bottom: 15px;
+  }
+  .top-services .card-slider img {
+    display: none;
+  }
+  .top-services .item-content {
+    padding: 20px;
+  }
+  .top-services .card-slider .item-content__bottom {
+    position: initial;
+  }
+  .hr_colorize,
+  .card-slider .item-content .price,
+  .card-slider .item-content .btns-wrap {
+    margin: 15px 0;
+  }
+  .top-services {
+    padding: 30px 0;
+  }
+  .stay-with-us {
+    padding: 30px 0;
+  }
+  .stay-with-us__wrap {
+    margin-top: 15px;
   }
 }
