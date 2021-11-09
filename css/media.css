@@ -164,7 +164,7 @@
     justify-content: center;
     gap: 15px;
   }
-  .form-page__wrap .btn-big-red {
+  .form-page__wrap .btn-red {
     margin-left: 0px;
   }
   .item-form {
@@ -212,10 +212,14 @@
   .top-services {
     padding: 30px 0;
   }
-  .stay-with-us {
+  .stay-with-us,
+  .what-treat__wrap {
     padding: 30px 0;
   }
   .stay-with-us__wrap {
     margin-top: 15px;
+  }
+  .first-section {
+    padding-bottom: 30px;
   }
 }
