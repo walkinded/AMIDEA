@@ -65,5 +65,40 @@ $(document).ready(function() {
       },
     ]
   });
+
+  $('.gallery__scroll-small').slick({
+    slidesToShow: 2,
+    vertical: true,
+    arrows: true,
+    infinity: true,
+    verticalSwiping: true,
+    asNavFor: ".gallery__scroll-big",
+    responsive: [
+      {
+        breakpoint: 1281,
+        settings: {
+          arrows: true,
+          slidesToShow: 3
+        }
+      }
+    ]
+  });
+  
+  $('.gallery__scroll-big').slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: false,
+    asNavFor: ".gallery__scroll-small",
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true
+        }
+      },
+    ]
+  });
   // END
 }); 

@@ -32,6 +32,9 @@
     max-width: 100px;
     height: 100px;
   }
+  .gallery__scroll-big {
+    max-width: 431px;
+  }
 }
 
 @media screen and ( max-width: 1200px ) {
@@ -63,6 +66,9 @@
   .grid__item blockquote {
     max-width: 100%;
     width: auto;
+  }
+  .gallery__scroll-small {
+    display: none;
   }
 }
 
@@ -171,6 +177,23 @@
   }
   .grid__item:first-child .img-box img {
     object-position: 0px -100px;
+  }
+  .our-works__content {
+    flex-wrap: wrap;
+  }
+  .our-works__info {
+    max-width: 100%;
+  }
+  .gallery {
+    max-width: 100%;
+    width: auto;
+  }
+  .gallery__scroll-big,
+  .scroll-big__item {
+    max-width: 100%;
+  }
+  .scroll-big__item {
+    height: calc(200px - 20px);
   }
 }
 
