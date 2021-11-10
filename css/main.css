@@ -140,6 +140,10 @@ li {
 .section-title-sub-margin .subtitle {
   margin-bottom: 35px;
 }
+.img-absolute {
+  position: absolute;
+}
+
 /* ========================== BTNS ========================== */
 .btns-wrap {
   display: flex;
@@ -1290,4 +1294,51 @@ li {
 .our-works__desc {
   margin-bottom: 80px;
 
+}
+
+/* ==================== REVIWES ==================== */
+.reviews {
+  position: relative;
+  padding: 40px 0;
+}
+.reviews .img-absolute {
+  top: 0;
+  right: 0;
+  z-index: -1;
+  max-width: 787px;
+  height: 100%;
+  object-fit: cover;
+}
+.reviews .subtitle {
+  max-width: 795px;
+  margin-bottom: 45px;
+}
+.reviews__box {
+  position: relative;
+  max-width: 974px ;
+  width: auto;
+  height: 690px;
+}
+.reviews__box-wrap {
+  position: absolute;
+  margin: 45px 97px;
+  overflow-y: scroll;
+  height: calc(690px - 90px);
+}
+.reviews__box-wrap::-webkit-scrollbar {
+  width: 5px;
+}
+
+.reviews__box-wrap::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset; */
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.reviews__box-wrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--color-blue);
+}
+.reviews__item {
+  margin-bottom: 50px;
 }
