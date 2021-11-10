@@ -46,5 +46,24 @@ $(document).ready(function() {
       },
     ]
   });
+
+  $('.sertif-slider').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 2,
+    speed: 1000,
+    infinity: true,
+    // autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          slidesToShow: 1,
+          // speed: 1000,
+        }
+      },
+    ]
+  });
   // END
 }); 
