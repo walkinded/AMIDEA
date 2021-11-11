@@ -1624,3 +1624,6 @@ footer {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.fadeBox { opacity: var(--o); }
+.sineInOut { transform: translateY(var(--ty)); }

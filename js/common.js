@@ -1,7 +1,6 @@
 $(document).ready(function() {
+  
   // START
-
-
   //  Бергер меню и меню
   // Закрыть меню если произашел клик вне блока
   $(document).mouseup(function (e){ 
@@ -20,7 +19,43 @@ $(document).ready(function() {
     }
   });
 
-  $(".input-choice").after().css("position:", "absolute");
+  const fadeBox = basicScroll.create({
+    elem: document.querySelector('.fadeBox'),
+    from: 'bottom-bottom',
+    to: 'top-middle',
+    // inside: (instance, percentage, props) => console.log('fadeBox is animating'),
+    // outside: (instance, percentage, props) => console.log('fadeBox is not animating'),
+    props: {
+      '--o': {
+        from: .99,
+        to: .01
+      }
+    }
+  });
+
+  const sineInOut = basicScroll.create({
+    elem: document.querySelector('.sineInOut'),
+    from: 'bottom-bottom',
+    to: 'top-middle',
+    direct: true,
+    // inside: (instance, percentage, props) => console.log('fadeBox is animating'),
+    // outside: (instance, percentage, props) => console.log('fadeBox is not animating'),
+    props: {
+      '--ty': {
+        from: '0',
+        to: '100px',
+      }
+    }
+  });
+
+  
+
+  fadeBox.start();
+  sineInOut.start();
+
+/* ==================== libs ==================== */ 
+  $("input[type=tel]").mask("+7 (999) 999-99-99");
+  $(".fancybox").fancybox();
 
 /*==================== SLICK-SLIDER ==================== */ 
   $('.slider').slick({
