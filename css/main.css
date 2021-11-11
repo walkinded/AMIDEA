@@ -1593,7 +1593,7 @@ footer {
   max-width: 200px;
   display: flex;
   justify-content: center;
-  grid-column: 3 / 4;
+  grid-column: 4;
   margin-left: 0;
 }
 .input-choice {
