@@ -144,6 +144,127 @@ li {
   position: absolute;
 }
 
+footer {
+  position: relative;
+  z-index: 4;
+  background: var(--text-color);
+  color: var(--color-white);
+  padding-top: 52px;
+}
+.footer-top,
+.footer-bottom {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-top {
+  justify-content: space-between;
+  min-height: calc(230px - 52px);
+  padding-bottom: 20px;
+  width: 100%;
+}
+.footer-top-item {
+  font-size: 14px;
+}
+.footer-top-item__logo a {
+  display: flex;
+  margin-bottom: 18px;
+}
+.footer-top-item__logo p {
+  max-width: 182px;
+  font-size: 13px;
+}
+.footer-top-item p {
+  margin-bottom: 20px;
+}
+.pages-links {
+  display: grid;
+  gap: 26px;
+}
+.pages-links li {
+  width: max-content;
+}
+.pages-links a {
+  text-transform: uppercase;
+  color: var(--card-blue);
+  font-weight: var(--font-demi);
+  font-size: var(--font-size-16px);
+}
+.item-link {
+  display: grid;
+  gap: 26px;
+}
+.item-link a {
+  color: var(--color-white);
+}
+.pages-links li a,
+.item-link li a,
+.phone-linsk a,
+.footer-insta,
+.footer-bottom a {
+  transition: all .3s;
+}
+.pages-links li:hover a,
+.item-link li:hover a,
+.phone-linsk a:hover,
+.footer-insta:hover,
+.footer-bottom a:hover {
+  opacity: .5;
+}
+.phone-linsk {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.phone-linsk a {
+  color: var(--card-blue);
+  font-size: 18px;
+  font-weight: var(--font-demi);
+}
+.phone-linsk a i {
+  font-size: 20px;
+  font-weight: var(--font-regular);
+}
+.footer-insta {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: var(--color-white);
+}
+.footer-insta i {
+  color: var(--card-blue);
+  font-size: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #4a4b4d;
+  padding: 24px 0;
+}
+.footer-bottom a,
+.footer-bottom p {
+  color: var(--color-white);
+  font-size: 14px;
+}
+.footer-bottom__wrap {
+  display: flex;
+  width: 100%;
+  gap: 85px;
+  flex-wrap: wrap;
+}
+.footer-bottom__wrap a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer-bottom__wrap a img {
+  height: 12px;
+}
+.footer-bottom .box-container {
+  width: 100%;
+}
+
+
 /* ========================== BTNS ========================== */
 .btns-wrap {
   display: flex;
