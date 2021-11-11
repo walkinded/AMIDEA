@@ -20,6 +20,8 @@ $(document).ready(function() {
     }
   });
 
+  $(".input-choice").after().css("position:", "absolute");
+
 /*==================== SLICK-SLIDER ==================== */ 
   $('.slider').slick({
     arrows: true,

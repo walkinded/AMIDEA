@@ -79,6 +79,9 @@
   .reviews .img-absolute {
     display: none;
   }
+  .our-insta__wrap {
+    flex-direction: column;
+  }
 }
 
 @media screen and ( max-width: 768px ) {
@@ -207,8 +210,34 @@
   .reviews__box-wrap {
     margin: 45px 50px;
   }
+  .make-appointment {
+    height: auto;
+    padding: 30px 0;
+  }
+  .make-appointment .img-absolute {
+    display: none;
+  }
 }
-
+@media screen and ( max-width: 640px ) {
+  
+  .make-appointment__box {
+    max-width: 100%;
+    width: auto;
+    float: initial;
+    padding: 20px;
+  }
+  .form-page__wrap_grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .form-page__wrap_grid .item-form,
+  .form-page__wrap_grid .item-form.item-form__time,
+  .form-page__wrap_grid .item-form.item-form__date,
+  .make-appointment__box .checkbox-right,
+  .make-appointment__box .btn-red  {
+    grid-column: initial;
+  }
+}
 @media screen and ( max-width: 500px ) {
   header .btns-wrap a:not(.call-btn__icon) {
     display: none;
@@ -271,7 +300,9 @@
   }
   .stay-with-us,
   .what-treat__wrap,
-  .our-experts {
+  .our-experts,
+  .reviews,
+  .our-insta {
     padding: 30px 0;
   }
   .stay-with-us__wrap {
@@ -304,5 +335,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+  .our-insta__posts {
+    justify-content: center;
+  }
+  .our-insta__posts img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
   }
 }

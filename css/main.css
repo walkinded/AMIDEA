@@ -739,6 +739,28 @@ li {
 .form-page__wrap .btn-red {
   margin-left: -20px;
 }
+.input-custom .item-form input {
+  font-size: 14px;
+  line-height: 21px;
+  width: calc(100% - 40px);
+  height: 60px;
+  padding: 0 20px;
+  background-color: var(--bg-color);
+  /* box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.22); */
+  font-family: var(--font-family);
+  border: 1px solid #d9dadc;
+  font-weight: var(--font-regular);
+  transition: all 0.3s;
+  border-radius: 6px;
+  color: var(--text-color);
+}
+
+.form-page__wrap_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 18px;
+  row-gap: 20px;
+}
 
 /* ==================== WHAT-TREAT ==================== */
 .what-treat {
@@ -1341,4 +1363,143 @@ li {
 }
 .reviews__item {
   margin-bottom: 50px;
+}
+
+/* ==================== OUR-INSTA ==================== */
+.our-insta {
+  padding: 40px 0;
+}
+.our-insta__wrap {
+  display: flex;
+  gap: 20px;
+}
+.our-insta__info {
+}
+.our-insta__info .title {
+  max-width: 541px;
+}
+.our-insta__info .subtitle {
+  max-width: 363px;
+
+}
+.our-insta__link {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  align-items: center;
+  color: var(--text-color);
+  font-size: var(--font-size-30px);
+  font-weight: var(--font-medium);
+}
+.our-insta__link img {
+  width: 65px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 1px rgba(123,198,239,.4);
+  transition: all .5s;
+}
+.our-insta__link:hover img {
+  transform: rotate(10deg);
+}
+.our-insta__link span {
+  background: linear-gradient(90deg, var(--text-color) 0%,  var(--text-color)100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.our-insta__link:hover span {
+  background: linear-gradient(90deg, rgba(249,121,74,1) 0%, rgba(243,42,63,1) 20%, rgba(168,45,175,1) 80%, rgba(100,62,206,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.our-insta__posts {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+
+  max-width: 1040px;
+  width: auto;
+
+  gap: 20px;
+}
+.our-insta__posts img {
+  max-width: 333px;
+  width: auto;
+  height: 333px;
+  object-fit: cover;
+}
+
+/* ==================== MAKE-APPOINTMENT ==================== */
+.make-appointment {
+  position: relative;
+  background: url(../img/bg-2.png) no-repeat center top / cover;
+  height: calc(625px - 128px);
+  padding: 64px 0;
+}
+.make-appointment .img-absolute {
+  z-index: 1;
+  top: -80px;
+  width: auto;
+  max-width: 100%;
+}
+.make-appointment__box {
+  position: relative;
+  z-index: 2;
+  max-width: 835px;
+  padding: 43px 60px;
+  background: var(--color-white);
+  border-radius: 15px;
+  float: right;
+}
+.make-appointment__box .title {
+  margin-bottom: 36px;
+}
+.form-page__wrap_grid .item-form {
+  position: relative;
+  grid-column: span 2;
+}
+.form-page__wrap_grid .item-form.item-form__date {
+  grid-column: 3;
+}
+.form-page__wrap_grid .item-form.item-form__time{
+  grid-column:  4;
+}
+.make-appointment__box .checkbox-right,
+.make-appointment__box .btn-red {
+  grid-column: span 2;
+}
+.make-appointment__box .btn-red {
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  grid-column: 3 / 4;
+  margin-left: 0;
+}
+.input-choice {
+  position: relative;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  font-size: 14px;
+  line-height: 21px;
+  width: 100%;
+  height: 62px;
+  padding: 0 20px;
+  background-color: var(--bg-color);
+  /* box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.22); */
+  font-family: var(--font-family);
+  border: 1px solid #d9dadc;
+  font-weight: var(--font-regular);
+  transition: all 0.3s;
+  border-radius: 6px;
+  color: var(--text-color);
+}
+.make-appointment__box .arrow-down {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  color: var(--card-blue);
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
