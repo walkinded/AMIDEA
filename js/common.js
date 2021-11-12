@@ -19,6 +19,26 @@ $(document).ready(function() {
     }
   });
 
+/* ==================== to up scroller ==================== */ 
+  $(document).ready(function(){   
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('#scroller').fadeIn();
+            $('#scroller').css({'display': 'flex'});
+        } else {
+            $('#scroller').fadeOut();
+        }
+    });
+    $('#scroller').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+  });
+
+
+/* ==================== basicScroll lib (test work) ==================== */ 
   const fadeBox = basicScroll.create({
     elem: document.querySelector('.fadeBox'),
     from: 'bottom-bottom',
@@ -47,7 +67,6 @@ $(document).ready(function() {
       }
     }
   });
-
   
 
   fadeBox.start();

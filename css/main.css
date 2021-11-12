@@ -1627,3 +1627,41 @@ footer {
 
 .fadeBox { opacity: var(--o); }
 .sineInOut { transform: translateY(var(--ty)); }
+
+#scroller {
+  position: fixed;
+  z-index: 10;
+  color: var(--card-blue);
+  background: var(--color-white);
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  border-radius: 50%;
+  bottom: 30px;
+  right: 120px;
+  box-shadow: 0 0px 5px 1px rgba(67,151,234,.3);
+  cursor: pointer;
+}
+#scroller::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 0px;
+  background: var(--card-blue);
+  transition: all .3s;
+  border-radius: 1px;
+}
+#scroller:hover::before {
+  height: 15px;
+}
+#scroller i {
+  transition: all .3s;
+} 
+#scroller:hover i {
+  transform: translateY(-5px);
+}
