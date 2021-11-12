@@ -221,6 +221,12 @@
     align-items: center;
     gap: 20px;
   }
+  #scroller {
+    right: 10px;
+    bottom: 60px;
+    width: 40px;
+    height: 40px;
+  }
 }
 @media screen and ( max-width: 640px ) {
   .make-appointment__box {
