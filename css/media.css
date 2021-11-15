@@ -82,6 +82,12 @@
   .our-insta__wrap {
     flex-direction: column;
   }
+  .cosmet-our-service__wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cosmet-our-service__item {
+    height: calc(324px - 20px);
+  }
 }
 
 @media screen and ( max-width: 768px ) {
@@ -226,6 +232,17 @@
     bottom: 60px;
     width: 40px;
     height: 40px;
+  }
+  .cosmet-our-service__item {
+    height: auto;
+  }
+  .cosmet-our-service__wrap {
+    grid-template-columns: 1fr;
+  }
+  .service__item-info .btn-red_cosmet {
+    position: relative;
+    bottom: 0;
+    margin: 20px auto 0;
   }
 }
 @media screen and ( max-width: 640px ) {

@@ -1,5 +1,36 @@
+// $(document).ready(function(e) {
+// 	const changePage = $('.change-site');
+//   if (changePage.is(e.target)) {
+//     $("body").css("display", "none");
+
+//     $("body").fadeIn(2000);
+    
+//     $(".change-site").click(function(event){
+//       event.preventDefault();
+//       linkLocation = this.href;
+//       $("body").fadeOut(1000, redirectPage);		
+//     });
+      
+//     function redirectPage() {
+//       window.location = linkLocation;
+//     }
+//   }
+// });
+
 $(document).ready(function() {
+
+  $("body").css("display", "none");
+  $("body").fadeIn(1000);
   
+  $(".change-site").click(function(event){
+    event.preventDefault();
+    linkLocation = this.href;
+    $("body").fadeOut(1000, redirectPage);		
+  });
+    
+  function redirectPage() {
+    window.location = linkLocation;
+  }
   // START
   //  Бергер меню и меню
   // Закрыть меню если произашел клик вне блока
@@ -18,6 +49,7 @@ $(document).ready(function() {
       }
     }
   });
+
 
 /* ==================== to up scroller ==================== */ 
   $(document).ready(function(){   
