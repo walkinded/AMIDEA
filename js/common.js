@@ -1,24 +1,6 @@
-// $(document).ready(function(e) {
-// 	const changePage = $('.change-site');
-//   if (changePage.is(e.target)) {
-//     $("body").css("display", "none");
-
-//     $("body").fadeIn(2000);
-    
-//     $(".change-site").click(function(event){
-//       event.preventDefault();
-//       linkLocation = this.href;
-//       $("body").fadeOut(1000, redirectPage);		
-//     });
-      
-//     function redirectPage() {
-//       window.location = linkLocation;
-//     }
-//   }
-// });
-
 $(document).ready(function() {
 
+/* ==================== плавный пережод между страницами ==================== */ 
   $("body").css("display", "none");
   $("body").fadeIn(1000);
   
@@ -52,58 +34,21 @@ $(document).ready(function() {
 
 
 /* ==================== to up scroller ==================== */ 
-  $(document).ready(function(){   
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('#scroller').fadeIn();
-            $('#scroller').css({'display': 'flex'});
-        } else {
-            $('#scroller').fadeOut();
-        }
-    });
-    $('#scroller').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 400);
-        return false;
-    });
-  });
-
-
-/* ==================== basicScroll lib (test work) ==================== */ 
-  const fadeBox = basicScroll.create({
-    elem: document.querySelector('.fadeBox'),
-    from: 'bottom-bottom',
-    to: 'top-middle',
-    // inside: (instance, percentage, props) => console.log('fadeBox is animating'),
-    // outside: (instance, percentage, props) => console.log('fadeBox is not animating'),
-    props: {
-      '--o': {
-        from: .99,
-        to: .01
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+          $('#scroller').fadeIn();
+          $('#scroller').css({'display': 'flex'});
+      } else {
+          $('#scroller').fadeOut();
       }
-    }
   });
-
-  const sineInOut = basicScroll.create({
-    elem: document.querySelector('.sineInOut'),
-    from: 'bottom-bottom',
-    to: 'top-middle',
-    direct: true,
-    // inside: (instance, percentage, props) => console.log('fadeBox is animating'),
-    // outside: (instance, percentage, props) => console.log('fadeBox is not animating'),
-    props: {
-      '--ty': {
-        from: '0',
-        to: '100px',
-      }
-    }
+  $('#scroller').click(function () {
+      $('body,html').animate({
+          scrollTop: 0
+      }, 400);
+      return false;
   });
-  
-
-  fadeBox.start();
-  sineInOut.start();
-
+ 
 /* ==================== libs ==================== */ 
   $("input[type=tel]").mask("+7 (999) 999-99-99");
   $(".fancybox").fancybox();
@@ -147,6 +92,41 @@ $(document).ready(function() {
         breakpoint: 768,
         settings: {
           arrows: true,
+          slidesToShow: 1,
+          // speed: 1000,
+        }
+      },
+    ]
+  });
+
+  $('.top-procedures__slider').slick({
+    arrows: true,
+    dots: true,
+    slidesToShow: 4,
+    speed: 1000,
+    infinity: true,
+    // autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+          // speed: 1000,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          // speed: 1000,
+        }
+      },
+      {
+        breakpoint: 641,
+        settings: {
+          arrows: false,
           slidesToShow: 1,
           // speed: 1000,
         }

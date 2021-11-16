@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="libs/fancybox-2.1.7/source/jquery.fancybox.css">
   <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="libs/revealator/fm.revealator.jquery.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/fonst.css">
@@ -35,7 +36,7 @@
         </header>
       </div>
 
-      <div class="first-section ">
+      <div class="first-section">
         <div class="box-container">
           <div class="first-section__grid-wrap">
 
@@ -43,7 +44,7 @@
               <p class="title first-section__title">Получите видимый результат <br> <span>без хирургических вмешательств</span> </p>
               <p class="subtitle first-section__subtitle">уже после первой косметологической процедуры</p>
 
-              <div class="info-icon__wrrap">
+              <div class="info-icon__wrrap revealator-slideup">
                 <div class="info-icon__item">
                   <div class="gradient-icon info-icon__border">
                     <img class="gradient-icon__tooth" src="img/svg/tooth.svg" alt="">
@@ -87,7 +88,7 @@
               </div>
               
             </div>
-            <div class="first-section__grid-item">
+            <div class="first-section__grid-item ">
               <img class="" src="img/section-1/cosmet-2.png" alt="">
               <div class="first-section__text-box">
                 <p>После чистки лица </p>
@@ -126,14 +127,14 @@
         </div>
       </div>
 
-      <div class="cosmet-our-service section-title-sub-margin"">
+      <div class="cosmet-our-service section-title-sub-margin">
         <div class="box-container">
           <p class="title">Наши услуги</p>
           <p class="subtitle">Прием в косметологии Амидея уютный и камерный, Вы почувствуете, 
             что здесь ждут только Вас и пусть весь мир подождет</p>
-            <div class="cosmet-our-service__wrap">
+            <div class="cosmet-our-service__wrap ">
 
-              <div class="cosmet-our-service__item">
+              <div class="cosmet-our-service__item revealator-slideup revealator-once">
                 <div class="service__item-info">
                   <div class="service__item-text">
                     <a href="#">Уходовая 
@@ -141,11 +142,11 @@
                     <p>Классическая косметология основана на различных массажных, неинвазивных методах и использовании профессиональных косметических средств.</p>
                   </div>
                   <a href="#" class="btn-1 btn-red_service">Перейти в раздел</a>
-                  <img src="img/cosmet-service/img-1.jpg" alt="">
+                  <img class="" src="img/cosmet-service/img-1.jpg" alt="">
                 </div>
               </div>
 
-              <div class="cosmet-our-service__item">
+              <div class="cosmet-our-service__item revealator-slideup revealator-once">
                 <div class="service__item-info">
                   <div class="service__item-text">
                     <a href="#">Аппаратная 
@@ -157,7 +158,7 @@
                 </div>
               </div>
 
-              <div class="cosmet-our-service__item">
+              <div class="cosmet-our-service__item revealator-slideup revealator-once">
                 <div class="service__item-info">
                   <div class="service__item-text">
                     <a href="#">Инъекционная 
@@ -170,7 +171,7 @@
                 </div>
               </div>
 
-              <div class="cosmet-our-service__item">
+              <div class="cosmet-our-service__item revealator-slideup revealator-once">
                 <div class="service__item-info">
                   <div class="service__item-text">
                     <a href="#">Лазерное лечение 
@@ -185,12 +186,36 @@
         </div>
       </div>
 
-      <div class="free-checkup fadeBox sineInOut">
+      <div class="free-checkup">
         <div class="box-container">
-          <p class="title">Приходите к нам на <span>бесплатную</span>  
+          <p class="title revealator-slideup revealator-once">Приходите к нам на <span>бесплатную</span>  
             консультацию </p>
-          <p class="subtitle">Вы сами выберете подходящий вариант исходя 
+          <p class="subtitle revealator-slideup revealator-once">Вы сами выберете подходящий вариант исходя 
             из ваших сроков и возможностей</p>
+            <div class="checklist__box">
+              <div class="checklist__item revealator-slideup revealator-once">
+                <div class="gradient-icon checklist">
+                  <img src="img/svg/check.svg" alt="">
+                </div>
+                <p>На консультации доктор определит тип кожи</p>
+              </div>
+
+              <div class="checklist__item revealator-slideup revealator-once">
+                <div class="gradient-icon checklist">
+                  <img src="img/svg/check.svg" alt="">
+
+                </div>
+                <p>Порекомендует косметику по типу кожи</p>
+              </div>
+
+              <div class="checklist__item revealator-slideup revealator-once">
+                <div class="gradient-icon checklist">
+                  <img src="img/svg/check.svg" alt="">
+                </div>
+                <p>Предоставит 2-3 плана лечения</p>
+              </div>
+              
+            </div>
           <div class="form-page">
             <form>
               <div class="form-page__wrap">
@@ -208,6 +233,128 @@
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-procedures section-title-sub-margin">
+        <div class="box-container">
+          <p class="title">ТОП-процедур от клиники «Амидея»</span>  
+            консультацию </p>
+          <p class="subtitle">С этими проблемами к нам обращаются чаще всего</p>
+
+            <div class="top-procedures__slider cosmet">
+
+              <div class="top-procedures__item">
+                <img src="img/top-services/cosmet-img-1.png" alt="">
+                <a class="top-procedures__name" href="#">профессиональная чистка лица</a>
+                <div class="item-content__bottom">
+                  <hr class="hr_colorize">
+                  <span class="price">от <strong>2000 руб.</strong> </span>
+                  <div class="btns-wrap">
+                    <a href="#" class="btn-1 btn-red-cosmet" tabindex="0">Записаться</a>
+                    <a href="#" class="btn-link_red" tabindex="0">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top-procedures__item">
+                <img src="img/top-services/cosmet-img-2.png" alt="">
+                <a class="top-procedures__name" href="#">Карбоновый пиллинг</a>
+                <div class="item-content__bottom">
+                  <hr class="hr_colorize">
+                  <span class="price">от <strong>3500 руб.</strong> </span>
+                  <div class="btns-wrap">
+                    <a href="#" class="btn-1 btn-red-cosmet" tabindex="0">Записаться</a>
+                    <a href="#" class="btn-link_red" tabindex="0">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top-procedures__item">
+                <img src="img/top-services/cosmet-img-3.png" alt="">
+                <a class="top-procedures__name" href="#">Биоревитализация</a>
+                <div class="item-content__bottom">
+                  <hr class="hr_colorize">
+                  <span class="price">от <strong>2500 руб.</strong> </span>
+                  <div class="btns-wrap">
+                    <a href="#" class="btn-1 btn-red-cosmet" tabindex="0">Записаться</a>
+                    <a href="#" class="btn-link_red" tabindex="0">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top-procedures__item">
+                <img src="img/top-services/cosmet-img-4.png" alt="">
+                <a class="top-procedures__name" href="#">Подтяжка лица жидкими нитями</a>
+                <div class="item-content__bottom">
+                  <hr class="hr_colorize">
+                  <span class="price">от <strong>18 000 руб.</strong> </span>
+                  <div class="btns-wrap">
+                    <a href="#" class="btn-1 btn-red-cosmet" tabindex="0">Записаться</a>
+                    <a href="#" class="btn-link_red" tabindex="0">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top-procedures__item">
+                <img src="img/top-services/cosmet-img-2.png" alt="">
+                <a class="top-procedures__name" href="#">Карбоновый пиллинг</a>
+                <div class="item-content__bottom">
+                  <hr class="hr_colorize">
+                  <span class="price">от <strong>3500 руб.</strong> </span>
+                  <div class="btns-wrap">
+                    <a href="#" class="btn-1 btn-red-cosmet" tabindex="0">Записаться</a>
+                    <a href="#" class="btn-link_red" tabindex="0">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+
+      <div class="why-stay">
+        <div class="box-container">
+          <p class="title">Почему <span>90% клиентов</span>  остаются с нами навсегда</p>
+       
+          <div class="why-stay__wrap">
+            <img class="why-stay__img" src="img/cosmet-img-1.jpg" alt="">
+            <div class="why-stay__info-box">
+              <p>Вы будете приятно удивлены высокой эффективностью наших методик — начиная от  чистки и потрясающих уходовых процедур, заканчивая контурной пластикой.</p>
+              <p>Роскошный интерьер, уютная обстановка и профессионализм нашего <span>косметолога Нинель</span>  дадут вам возможность расслабиться и получить максимум удовольствия от процесса и результата косметологических процедур</p>
+              <div class="features">
+
+                <div class="features-icon__item">
+                  <div class="gradient-icon info-icon__border">
+                    <img class="" src="img/svg/tooth.svg" alt="">
+                  </div>
+                  <p>Уникальные разработанные нашим косметологом методики и протоколы косметологических процедур</p>
+                </div>
+
+                <div class="features-icon__item">
+                  <div class="gradient-icon info-icon__border">
+                    <img class="" src="img/svg/tooth.svg" alt="">
+                  </div>
+                  <p>Используем дорогие и качественные препараты, а так же аппараты и лазеры ведущих мировых производителей</p>
+                </div>
+
+                <div class="features-icon__item">
+                  <div class="gradient-icon info-icon__border">
+                    <img class="" src="img/svg/tooth.svg" alt="">
+                  </div>
+                  <p>Сугубо медицинский подход к уходу за лицом. Косметологи только с высшим медицинским образованием</p>
+                </div>
+
+                <div class="features-icon__item">
+                  <div class="gradient-icon info-icon__border">
+                    <img class="" src="img/svg/tooth.svg" alt="">
+                  </div>
+                  <p>После каждого посещения косметолога даем личную карточку, чтобы вы всегда знали что за процедура, какой препарат и доза были введены</p>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -814,7 +961,7 @@
   <script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
   <script src="libs/maskedinput/jquery.maskedinput.js"></script>
   <script src="libs/slick/slick.min.js"></script>
-  <script src="libs/basicScroll/dist/basicScroll.min.js"></script>
+  <script src="libs/revealator/fm.revealator.jquery.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

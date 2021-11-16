@@ -42,7 +42,12 @@
     max-width: 478px;
   }
 }
-
+@media screen and ( max-width: 1366px ) {
+  .features {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
 @media screen and ( max-width: 1200px ) {
   .work-time {
     display: none;
@@ -89,6 +94,25 @@
     height: calc(324px - 20px);
   }
 }
+@media screen and ( max-width: 991px ) { 
+  .top-procedures__item {
+    margin: 0 auto;
+  }
+  .why-stay__wrap {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .why-stay__img {
+    display: none;
+  }
+  .why-stay__info-box {
+    padding: 0;
+  }
+  .features {
+    margin-top: 20px;
+  }
+}
+
 
 @media screen and ( max-width: 768px ) {
   .navigation-side {
@@ -105,7 +129,9 @@
   .navigation-side ul {
     display: flex;
   }
- 
+  .body-cosmetology .menu {
+    background: var(--color-main-cosmetology);
+  }
   .menu {
     position: fixed;
     top: initial;
@@ -139,6 +165,18 @@
     width: 4320px;
     height: 100%;
   }
+  .body-cosmetology .wave {
+    left: initial;
+    width: 100%;
+    height: 100px;
+    top: -80px;
+  }
+  .body-cosmetology .wave_img {
+    background: url(../img/svg/Vector-cosmet.svg) repeat-x;
+    background-size: 700px;
+    width: 4320px;
+    height: 100%;
+  }
   @keyframes waves {
     0% { margin-left: 0px;}
     100% {margin-left: -1440px;}
@@ -160,7 +198,8 @@
   .item-contetn__text-wrap {
     padding: 20px;
   }
-  .free-checkup {
+  .free-checkup,
+  .body-cosmetology .free-checkup {
     padding: 30px 0;
   }
   .stay-with-us__left,
@@ -267,8 +306,12 @@
   .make-appointment {
     height: auto;
   }
+  .info-icon__wrrap,
+  .checklist__box {
+    grid-template-columns: 1fr;
+  }
 }
-@media screen and ( max-width: 500px ) {
+@media screen and ( max-width: 500px) {
   header .btns-wrap a:not(.call-btn__icon) {
     display: none;
   }
@@ -280,8 +323,11 @@
     justify-content: center;
     gap: 15px;
   }
-  .form-page__wrap .btn-red {
+  .form-page__wrap .btn-red,
+  .btn-red-cosmet {
     margin-left: 0px;
+    width: 100%;
+    justify-content: center;
   }
   .item-form {
     width: 100%;
@@ -303,7 +349,8 @@
   .what-treat__item {
     height: auto;
   }
-  .free-checkup__info {
+  .free-checkup__info,
+  .body-cosmetology .free-checkup {
     height: auto;
   }
   .free-checkup .title,
