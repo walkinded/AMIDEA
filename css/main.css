@@ -74,6 +74,9 @@ body {
 .body-cosmetology {
   color: var(--text-color-cosmetology);
 }
+.body-cosmetology *::-webkit-input-placeholder {
+  color: var(--text-color-cosmetology);
+}
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -1147,6 +1150,9 @@ footer {
   transition: all 0.3s;
   box-shadow: 0 5px 5px 1px rgba(123,198,239,.4);
 }
+.arrow-s_cosmet .slick-arrow {
+  box-shadow: 0 5px 5px 1px rgba(210, 153, 143, .3);
+}
 .arrow-s .slick-arrow.slick-prev {
   left: 0;
   background: #fff url("../img/svg/chevron-left-solid.svg") no-repeat center / cover;
@@ -1155,6 +1161,17 @@ footer {
 .arrow-s .slick-arrow.slick-next {
   right: 0;
   background: #fff url("../img/svg/chevron-right-solid.svg") no-repeat center / cover;
+  background-size: 4px 7px;
+}
+
+.arrow-s_cosmet .slick-arrow.slick-prev {
+  left: 0;
+  background: #fff url("../img/svg/chevron-left-solid-cosmet.svg") no-repeat center / cover;
+  background-size: 4px 7px;
+}
+.arrow-s_cosmet .slick-arrow.slick-next {
+  right: 0;
+  background: #fff url("../img/svg/chevron-right-solid-cosmet.svg") no-repeat center / cover;
   background-size: 4px 7px;
 }
 
@@ -1184,6 +1201,22 @@ footer {
   top: 94%;
   right: initial;
   background: #fff url("../img/svg/chevron-right-solid.svg") no-repeat center / cover;
+  background-size: 4px 7px;
+}
+.arrow-verticle_cosmet .slick-arrow {
+  box-shadow: 0 0px 5px 1px rgba(210, 153, 143, .3);
+
+}
+.arrow-verticle_cosmet .slick-arrow.slick-prev {
+  top: 0;
+  left: initial;
+  background: #fff url("../img/svg/chevron-left-solid-cosmet.svg") no-repeat center / cover;
+  background-size: 4px 7px;
+}
+.arrow-verticle_cosmet .slick-arrow.slick-next {
+  top: 94%;
+  right: initial;
+  background: #fff url("../img/svg/chevron-right-solid-cosmet.svg") no-repeat center / cover;
   background-size: 4px 7px;
 }
 .slick-dots {
@@ -2017,7 +2050,7 @@ footer {
   font-weight: var(--font-demi);
 }
 
-/*  */
+/* ==================== top-procedures ==================== */
 .top-procedures {
   background: var(--bg-color-cosmetology);
   padding: 40px 0;
@@ -2069,7 +2102,7 @@ footer {
 }
 
 
-/*  */
+/* ==================== why-stay  ==================== */
 .why-stay {
   padding: 40px 0;
 }
@@ -2141,4 +2174,209 @@ footer {
   width: 44px;
   height: auto;
   transition: all .5s;
+}
+
+/* ==================== lead-cosmetologist ==================== */
+.lead-cosmetologist {
+  padding: 40px 0;
+  background: url(../img/bg-4.png) no-repeat center top / cover;
+}
+.lead-cosmetologist__wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+}
+.lead-cosmetologist__img {
+  max-width: 459px;
+  width: 100%;
+  height: 622px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.lead-cosmetologist__content-lead {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px 64px;
+  width: calc(100% - 128px);
+  background: var(--color-white);
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0 10px 10px 0px rgba(210, 153, 142, .3);
+}
+.content-lead__about-lead {
+}
+.content-lead__about-lead blockquote {
+  position: relative;
+  font-size: var(--font-size-18px);
+  font-style: italic;
+  max-width: 290px;
+  margin-top: 100px;
+}
+.content-lead__about-lead blockquote::before, 
+.content-lead__about-lead  blockquote::after {
+  position: absolute;
+  content: '"';
+  font-size: 60px;
+  color: var(--color-main-cosmetology);
+  font-weight: var(--font-demi);
+  height: 20px;
+}
+.content-lead__about-lead blockquote::before {
+  top: -50px;
+  left: -5px;
+}
+.content-lead__about-lead blockquote::after {
+  bottom: -20px;
+  right: 0;
+}
+.about-lead__name {
+  font-size: var(--font-size-30px);
+  font-weight: var(--font-demi);
+  color: var(--text-color-cosmetology);
+  margin-bottom: 25px;
+}
+.about-lead__specialty {
+  font-size: var(--font-size-18px);
+  font-weight: var(--font-medium);
+}
+.about-lead__experience {
+  margin-top: 110px;
+  color: var(--color-main-cosmetology);
+}
+.about-lead__experience strong {
+  font-size: var(--font-size-45px);
+  font-weight: var(--font-demi);
+  margin-bottom: 15px;
+}
+.about-lead__experience p {
+  font-size: var(--font-size-18px);
+  font-weight: var(--font-medium);
+}
+.content-lead__knowledge-lead {
+}
+.knowledge-lead__title {
+  font-size: var(--font-size-18px);
+  font-weight: var(--font-medium);
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.knowledge-lead__list {
+}
+
+.knowledge-lead__list li {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 21px;
+}
+.knowledge-lead__list li::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--text-color-cosmetology);
+  top: 6px;
+  left: 0;
+}
+.sertif-slider_cosmet {
+  min-width: 0;
+  position: relative;
+  max-width: 475px;
+  width: auto;
+  margin-top: 40px;
+}
+.sertif-slider_cosmet .sertif-slide__item {
+  margin: 0 auto;
+  border: 1px solid var(--card-color-cosmetology)
+}
+
+/* our-works_cosmet */
+.our-works_cosmet {
+  background: #fefcfa;
+}
+
+.our-works_cosmet .our-works__service-name {
+  box-shadow: 0 0px 10px 1px rgba(226, 210, 198, .3);
+}
+.our-works_cosmet .scroll-small__item,
+.our-works_cosmet .scroll-big__item {
+  box-shadow: 0 0px 10px 1px rgba(226, 210, 198, .3);
+}
+.our-works_cosmet .name-expert {
+  color: currentColor;
+}
+.our-works_cosmet .our-works__desc {
+  margin-bottom: 10px;
+}
+.our-works_cosmet .knowledge-lead__list {
+  margin-bottom: 30px;
+}
+.our-works_cosmet .knowledge-lead__list li {
+  margin-bottom: 10px;
+}
+
+
+.body-cosmetology .make-appointment {
+  background: url(../img/bg-4.png) no-repeat center top / cover;
+}
+.make-appointment .btn-red-cosmet {
+  margin-left: 0;
+}
+
+.input-custom_cosmet .item-form input {
+  background-color: #fcfaf8;
+  border: 1px solid var(--bg-color-cosmetology);
+  color: var(--text-color-cosmetology);
+}
+.input-custom_cosmet .input-choice {
+  color: var(--text-color-cosmetology);
+  border: 1px solid var(--bg-color-cosmetology);
+  background-color: #fcfaf8;
+}
+.input-custom_cosmet .arrow-down {
+  color: var(--text-color-cosmetology);
+}
+
+/* our-reviews  */
+.our-reviews {
+  position: relative;
+  padding: 40px 0;
+  background: linear-gradient(45deg, rgba(236,219,202,1) 0%, rgba(228,200,184,1) 100%);
+  min-height: calc(750px - 80px);
+  overflow: hidden;
+}
+.our-reviews .subtitle {
+  max-width: 450px
+}
+.our-reviews .img-absolute {
+  bottom: 0;
+  left: 0;
+}
+.our-reviews__wrap-scroll {
+  float: right;
+  position: relative;
+  max-width: 880px;
+}
+.wrap-scroll__item {
+  position: relative;
+  background: url(../img/iPhone_12_Pro_Max.png) no-repeat center top / cover;
+  background-size: auto 100%;
+  min-width: 295px;
+  max-width: 295px;
+  height: 584px;
+  /* overflow: hidden; */
+  /* margin: 0 auto; */
+}
+.wrap-scroll__item img {
+  position: relative;
+  left: 19px;
+  top: 41px;
+
+  max-width: 246px;
+  width: 100%;
+  max-height: 436px;
+  height: 100%;
+
+  object-fit: cover;
+  z-index: -1;
 }

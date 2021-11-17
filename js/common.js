@@ -99,6 +99,61 @@ $(document).ready(function() {
     ]
   });
 
+
+  $('.sertif-slider_cosmet').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 3,
+    speed: 1000,
+    infinity: true,
+    // autoplay: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          // speed: 1000,
+        }
+      },
+      {
+        breakpoint: 501,
+        settings: {
+          arrows: true,
+          slidesToShow: 1,
+          // speed: 1000,
+        }
+      },
+    ]
+  });
+
+  $('.our-reviews__wrap-scroll').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 3,
+    speed: 1000,
+    infinity: true,
+    // autoplay: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          // speed: 1000,
+        }
+      },
+      {
+        breakpoint: 501,
+        settings: {
+          arrows: true,
+          slidesToShow: 1,
+          // speed: 1000,
+        }
+      },
+    ]
+  });
+
   $('.top-procedures__slider').slick({
     arrows: true,
     dots: true,

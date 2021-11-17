@@ -41,12 +41,29 @@
   .reviews .img-absolute {
     max-width: 478px;
   }
+  .our-reviews .img-absolute {
+    left: -86px;
+    max-width: 600px;
+  }
+}
+@media screen and ( max-width: 1400px ) {
+  .lead-cosmetologist__wrap {
+    align-items: initial;
+  }
+  .lead-cosmetologist__content-lead {
+    grid-template-columns: 1fr;
+  }
+  .about-lead__experience,
+  .content-lead__about-lead blockquote {
+    margin-top: 60px;
+  }
 }
 @media screen and ( max-width: 1366px ) {
   .features {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
 }
 @media screen and ( max-width: 1200px ) {
   .work-time {
@@ -93,6 +110,11 @@
   .cosmet-our-service__item {
     height: calc(324px - 20px);
   }
+  .lead-cosmetologist__img {
+    max-width: 259px;
+    height: 422px;
+  }
+  
 }
 @media screen and ( max-width: 991px ) { 
   .top-procedures__item {
@@ -111,8 +133,22 @@
   .features {
     margin-top: 20px;
   }
+  .our-reviews__wrap-scroll {
+    max-width: 100%;
+    width: auto;
+  }
+  .wrap-scroll__item {
+    margin: 0 auto;
+    min-width: 284px
+  }
+  .wrap-scroll__item img {
+    left: 13px;
+    top: 41px;
+    max-width: 245px;
+    max-height: 435px;
+  }
 }
-
+/* #005E58 */
 
 @media screen and ( max-width: 768px ) {
   .navigation-side {
@@ -199,7 +235,13 @@
     padding: 20px;
   }
   .free-checkup,
-  .body-cosmetology .free-checkup {
+  .body-cosmetology .free-checkup,
+  .cosmet-our-service,
+  .top-procedures,
+  .why-stay,
+  .lead-cosmetologist,
+  .our-works,
+  .our-reviews {
     padding: 30px 0;
   }
   .stay-with-us__left,
@@ -281,6 +323,35 @@
   .service__item-info .btn-red_cosmet {
     position: relative;
     bottom: 0;
+    margin: 20px auto 0;
+  }
+  .sertif-slider_cosmet {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .lead-cosmetologist__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lead-cosmetologist__content-lead {
+    border-radius: 15px;
+  }
+  .wrap-scroll__item {
+    /* height: 440px; */
+  }
+  .wrap-scroll__item img {
+    left: 15px;
+    top: 40px;
+    max-width: 243px;
+    max-height: 438px;
+  }
+  .service__item-info {
+    height: auto;
+    padding: 10px;
+  }
+  .service__item-info .btn-red_service {
+    position: relative;
+    bottom: 0px;
     margin: 20px auto 0;
   }
 }
@@ -423,5 +494,35 @@
   }
   .footer-top {
     flex-direction: column;
+  }
+  .lead-cosmetologist__img {
+    max-width: 259px;
+    height: 222px;
+    object-position: top;
+  }
+  .lead-cosmetologist__content-lead {
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+  .sertif-slider_cosmet {
+    max-width: 200px;
+  }
+  .wrap-scroll__item {
+    /* height: 385px; */
+  }
+  .wrap-scroll__item img {
+    left: 15px;
+    top: 41px;
+    max-width: 244px;
+    max-height: 433px;
+  }
+  .our-reviews {
+    min-height: auto;
+  }
+  .our-reviews .img-absolute {
+    display: none;
+  }
+  .info-icon__wrrap {
+    margin: 20px 0;
   }
 }
