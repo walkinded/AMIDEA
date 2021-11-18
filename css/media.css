@@ -525,4 +525,11 @@
   .info-icon__wrrap {
     margin: 20px 0;
   }
+  .our-works_cosmet .btn-red-cosmet,
+  .body-cosmetology .free-checkup .btn-red-cosmet,
+  .our-works .btn-red {
+    max-width: 100%;
+    width: 100%;
+    height: 52px;
+  }
 }
