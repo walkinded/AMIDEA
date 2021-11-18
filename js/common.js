@@ -33,6 +33,34 @@ $(document).ready(function() {
   });
 
 
+  $('.grid__item').on('click', function(){
+    let img = $(this).find('.img-box img').attr('src'),
+        imgFirst = $('.grid__item:first').find('.img-box img').attr('src'),
+        nameExpert = $(this).find('.name-expert').html(),
+        nameExpertFirst = $('.grid__item:first').find('.name-expert').html(),
+        specialty = $(this).find('.specialty').html(),
+        specialtyFirst = $('.grid__item:first').find('.specialty').html(),
+        blockquote = $(this).find('blockquote').html(),
+        blockquoteFirst = $('.grid__item:first').find('blockquote').html();
+    console.log(nameExpertFirst);
+
+    $(this).find('.img-box img').attr('src', imgFirst);
+    $('.grid__item:first').find('.img-box img').attr('src', img);
+
+    $(this).find('.name-expert').html(nameExpertFirst);
+    $('.grid__item:first').find('.name-expert').html(nameExpert);
+
+    $(this).find('.specialty').html(specialtyFirst);
+    $('.grid__item:first').find('.specialty').html(specialty);
+
+    $(this).find('blockquote').html(blockquoteFirst);
+    $('.grid__item:first').find('blockquote').html(blockquote);
+
+
+    $('.sertif-slider').slick('reinit');
+  });
+
+
 /* ==================== to up scroller ==================== */ 
   $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
