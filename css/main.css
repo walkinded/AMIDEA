@@ -1405,6 +1405,9 @@ footer {
   background: url(../img/bg-1.png) no-repeat center top / cover;
   padding: 40px 0;
 }
+.our-experts_page {
+  background: none;
+}
 .our-experts__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1459,6 +1462,12 @@ footer {
 }
 .grid__item blockquote {
   display: none;
+}
+.grid__item .sertif-slider  {
+  display: none;
+}
+.grid__item:first-child .sertif-slider  {
+  display: flex;
 }
 .grid__item:first-child blockquote {
   display: block;
@@ -2408,4 +2417,30 @@ footer {
 
   object-fit: cover;
   z-index: -1;
+}
+
+/* ========== BREADCRUMB ========== */
+.breadcrumb {
+  margin: 20px 0 0;
+  padding-bottom: 0 !important;
+  overflow-x: scroll;
+}
+.breadcrumb::-webkit-scrollbar {
+  width: 0;
+}
+.breadcrumb ol {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  color: currentColor;
+  width: max-content;
+}
+.breadcrumb ol li {
+  margin-right: 15px;
+}
+.breadcrumb ol a {
+  color: var(--text-color-gary);
+}
+.span_m_l_20 {
+  margin-left: 15px;
 }

@@ -33,7 +33,10 @@ $(document).ready(function() {
   });
 
 
-  $('.grid__item').on('click', function(){
+  $('.grid__item:not(:first)').on('click', function(){
+    $('.grid__item').removeClass('active');
+    $(this).addClass('active');
+
     let img = $(this).find('.img-box img').attr('src'),
         imgFirst = $('.grid__item:first').find('.img-box img').attr('src'),
         nameExpert = $(this).find('.name-expert').html(),
@@ -41,9 +44,47 @@ $(document).ready(function() {
         specialty = $(this).find('.specialty').html(),
         specialtyFirst = $('.grid__item:first').find('.specialty').html(),
         blockquote = $(this).find('blockquote').html(),
-        blockquoteFirst = $('.grid__item:first').find('blockquote').html();
-    console.log(nameExpertFirst);
+        blockquoteFirst = $('.grid__item:first').find('blockquote').html(),
+        sertif = $(this).find('.sertif-slider').html(),
+        sertifFirst = $('.grid__item:first').find('.sertif-slider').html(),
+        sertifArr = [],
+        sertifArrFirst = [];
 
+   
+    /* ========== уникальные картинки ==========  */
+    $(this).find('.sertif-slider img').each(function() {
+      sertifArr.push($(this).attr('src'));
+    });
+    sertifArr = Array.from(new Set(sertifArr));
+    console.log(sertifArr);
+    
+    $('.grid__item:first').find('.sertif-slider img').each(function() {
+      sertifArrFirst.push($(this).attr('src'));
+    });
+    sertifArrFirst = Array.from(new Set(sertifArrFirst));
+    console.log(sertifArrFirst);
+
+    /* ========== перезапись картинок для sertifArrFirst ========== */
+    $.each(sertifArrFirst,function(index,value){
+      $(this).find('.sertif-slider img').remove();
+    });
+    $.each(sertifArrFirst,function(index,value){
+      $(this).find('.sertif-slider .sertif-slide__item').append('<img src="" alt="">');
+      $(this).find('.sertif-slider .sertif-slide__item img').attr('src', value);
+      // console.log('Индекс: ' + index + '; Значение: ' + value);
+    });
+
+    /* ========== перезапись картинок для sertifArr ========== */
+    $.each(sertifArr,function(index,value){
+      $('.grid__item:first').find('.sertif-slider img').remove();
+    });
+    $.each(sertifArr,function(index,value){
+      $('.grid__item:first').find('.sertif-slider .sertif-slide__item').append('<img src="" alt="">');
+      $('.grid__item:first').find('.sertif-slider .sertif-slide__item img').attr('src', value);
+      // console.log('Индекс: ' + index + '; Значение: ' + value);
+    });
+
+    /* ========== меняем местами ========== */
     $(this).find('.img-box img').attr('src', imgFirst);
     $('.grid__item:first').find('.img-box img').attr('src', img);
 
@@ -56,8 +97,10 @@ $(document).ready(function() {
     $(this).find('blockquote').html(blockquoteFirst);
     $('.grid__item:first').find('blockquote').html(blockquote);
 
+    $(this).find('.sertif-slider').html(sertifFirst);
+    $('.grid__item:first').find('.sertif-slider').html(sertif);
 
-    $('.sertif-slider').slick('reinit');
+    $('.sertif-slider').slick('refresh');
   });
 
 
