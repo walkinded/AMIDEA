@@ -103,6 +103,12 @@ $(document).ready(function() {
     $('.sertif-slider').slick('refresh');
   });
 
+/* ==================== BLOG up info ==================== */ 
+  
+  // $('.blog-page__item-blog').on('mouseover', function(){
+  //   $('.blog-page__item-blog').find('.item-blog__info').removeClass('active');
+  //   $(this).find('.item-blog__info').addClass('active');
+  // });
 
 /* ==================== to up scroller ==================== */ 
   $(window).scroll(function () {
