@@ -48,6 +48,10 @@
   .contacts__map {
     max-width: 914px;
   }
+  .service-catalog__grid {
+    column-gap: 30px;
+    row-gap: 65px;
+  }
 }
 @media screen and ( max-width: 1400px ) {
   .lead-cosmetologist__wrap {
@@ -124,6 +128,9 @@
   }
   .contacts__map {
     max-width: 514px;
+  }
+  .service-catalog__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and ( max-width: 991px ) { 
@@ -380,6 +387,12 @@
   .contacts__map {
     max-width: 414px;
   }
+  .service-catalog__grid {
+    grid-template-columns: 1fr;
+  }
+  .service-catalog__item {
+    max-width: calc(100% - 120px);
+  }
 }
 @media screen and ( max-width: 640px ) {
   .make-appointment__box {
@@ -621,5 +634,17 @@
   .accordion__body li {
     flex-direction: column;
     text-align: center;
+  }
+  .service-catalog__item {
+    max-width: calc(100% - 40px);
+    padding: 52px 20px;
+    height: calc(410px - 104px);
+  }
+  .service-catalog__item p {
+    top: 10px;
+    left: initial;
+  }
+  .show-more {
+    bottom: 43px;
   }
 }

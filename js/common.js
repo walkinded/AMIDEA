@@ -136,6 +136,10 @@ $('#accordion .accordion__wrap .accordion__head').find('.accordion__body').slide
   //   });
   // }
 
+  $('.show-more').on('click', function(){
+    $(this).siblings('.service-catalog__item ul').toggleClass('active');
+    $(this).parent('.service-catalog__item').toggleClass('active');
+  });
 /* ==================== to up scroller ==================== */ 
   $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {

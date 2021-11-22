@@ -2607,7 +2607,8 @@ footer {
   -webkit-box-orient: vertical;
 }
 
-/* ========== PAGINATION ========== */
+
+/* ==================== PAGINATION ==================== */
 .pager {
   display: flex;
   align-items: center;
@@ -2668,13 +2669,15 @@ footer {
   color: var(--color-white);
 }
 
-
+/* ==================== QUESTION-ANSWRES + PRICE-LIST ==================== */
 .question-answer,
-.price-list {
+.price-list,
+.service-catalog {
   padding: 0 0 40px;
 }
 .question-answer .title,
-.price-list .title{
+.price-list .title,
+.service-catalog .title {
   margin-bottom: 40px;
 }
 .question-answer__toggle-pages {
@@ -2865,4 +2868,109 @@ footer {
 }
 .accordion__body li:last-child {
   border-bottom: 0;
+}
+
+/* ==================== SERVICE-CATALOG ==================== */
+.service-catalog {
+}
+.title {
+}
+.service-catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+  row-gap: 89px;
+  margin-top: 70px;
+}
+.service-catalog__item {
+  position: relative;
+  box-shadow: 0 5px 10px 1px rgba(67,151,234,.3);
+  border-radius: 15px;
+  height: calc(480px - 104px);
+  max-width: calc(477px - 120px);
+  padding: 52px 60px;
+  transition: all .5s;
+}
+.service-catalog__item.active {
+  height: calc(100% - 120px);
+}
+
+.service-catalog__item p {
+  position: relative;
+  left: 70px;
+  font-size: var(--font-size-24px);
+  font-weight: var(--font-demi);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.service-catalog__item ul {
+  height: 186px;
+  overflow: hidden;
+  transition: all .5s;
+
+}
+.service-catalog__item ul.active {
+  height: 100%;
+  padding-bottom: 40px;
+}
+.service-catalog__item li {
+  position: relative;
+  font-size: var(--font-size-20px);
+  font-weight: var(--font-medium);
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+.service-catalog__item li::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-blue);
+}
+.service-catalog__item li a {
+  color: var(--color-blue);
+}
+.service-catalog__item .gradient-icon__wrrap {
+  position: absolute;
+  left: 20px;
+  top: -45px;
+}
+.service-catalog__item .gradient-icon__wrrap img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.show-more {
+  position: absolute;
+  bottom: 64px;
+  font-size: 14px;
+  font-weight: var(--font-demi);
+  color: var(--color-blue);
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+}
+
+.body-cosmetology .service-catalog__item li a {
+  color: var(--color-main-cosmetology);
+}
+.body-cosmetology .service-catalog__item li::before {
+  background: var(--color-main-cosmetology);
+}
+.body-cosmetology .service-catalog__item {
+  box-shadow: 0 0px 5px 1px rgba(210, 153, 143, .3);
+}
+.body-cosmetology .show-more {
+  color: var(--color-main-cosmetology);
+
+}
+.body-cosmetology .gradient-icon_circle {
+  background: var(--gradient-card-cosmetology);
+}
+.body-cosmetology .gradient-icon_circle.gradient-icon::after {
+  background: var(--color-main-cosmetology);
+  box-shadow: 0 0px 5px 1px rgba(210, 153, 143, .3);
 }
