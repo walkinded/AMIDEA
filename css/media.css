@@ -69,6 +69,9 @@
   .contacts__map {
     max-width: 814px;
   }
+  .blog-page__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and ( max-width: 1200px ) {
   .work-time {
@@ -153,6 +156,15 @@
     top: 41px;
     max-width: 245px;
     max-height: 435px;
+  }
+  .blog-page__items {
+    grid-template-columns: 1fr;
+  }
+  .blog-page__item-blog:first-child {
+    grid-column: initial;
+  }
+  .blog-page__item-blog {
+    height: 350px;
   }
 }
 /* #005E58 */
@@ -550,5 +562,22 @@
   .contacts-page__wrap {
     flex-direction: column;
     margin-bottom: 20px;
+  }
+  .item-blog__info .desc {
+    -webkit-line-clamp: 2;
+    height: 55px;
+  }
+  .item-blog__info:hover .desc {
+    height: auto;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .pager {
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .page-numbers {
+    min-width: 40px;
+    height: 40px;
   }
 }
