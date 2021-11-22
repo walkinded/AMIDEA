@@ -961,6 +961,14 @@ footer {
   border-radius: 6px;
   color: var(--text-color);
 }
+.input-custom .item-form textarea {
+  height: 112px;
+  resize: none;
+  background-color: var(--bg-color);
+  border-radius: 6px;
+  border: 1px solid #d9dadc;
+  margin-top: 0;
+}
 
 .form-page__wrap_grid {
   display: grid;
@@ -2361,7 +2369,8 @@ footer {
   margin-left: 0;
 }
 
-.input-custom_cosmet .item-form input {
+.input-custom_cosmet .item-form input,
+.input-custom_cosmet .item-form textarea {
   background-color: #fcfaf8;
   border: 1px solid var(--bg-color-cosmetology);
   color: var(--text-color-cosmetology);
@@ -2657,4 +2666,186 @@ footer {
 .body-cosmetology .page-numbers:hover {
   background: var(--color-main-cosmetology);
   color: var(--color-white);
+}
+
+
+.question-answer {
+  padding: 0 0 40px;
+}
+.question-answer .title {
+  margin-bottom: 40px;
+}
+.question-answer__toggle-pages {
+  max-width: 607px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0px 5px 1px rgba(67,151,234,.3);
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.question-answer__wrap {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.question-answer__toggle-pages a {
+  position: relative;
+  display: flex;
+  width: calc(100% - 70px);
+  height: calc(100% - 60px);
+  padding: 30px 35px;
+  color: var(--color-blue);
+  font-size: var(--font-size-24px);
+  text-transform: uppercase;
+  font-weight: var(--font-demi);
+  border-radius: 15px 0 0 15px;
+
+}
+.question-answer__toggle-pages a::before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 1px;
+  background: var(--color-blue);
+  bottom: 28px;
+  right: 41px;
+}
+.question-answer__toggle-pages a.active {
+  color: var(--color-white);
+  background: var(--color-blue);
+}
+.question-answer__toggle-pages a.active::before {
+  content: none;
+} 
+.accordion__wrap {
+  margin-bottom: 30px;
+}
+.question-answer .item__accordion {
+  max-width: 1060px;
+  width: 100%;
+}
+.item__accordion {
+  max-width: 100%;
+  width: auto;
+}
+.accordion__head {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background: var(--gradient-blue);
+  color: var(--color-white);
+  font-size: var(--font-size-24px);
+  font-weight: var(--font-demi);
+  text-transform: uppercase;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 1px rgba(67,151,234,.3);
+  cursor: pointer;
+}
+.accordion__head_wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  background: var(--gradient-border);
+  border-radius: 10px;
+}
+.accordion__head_wrap::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  background: var(--gradient-blue);
+  border-radius: 10px;
+}
+.accordion__head p{
+  position: relative;
+  padding: 34px 41px;
+}
+.accordion__head i {
+  font-size: 12px;
+  margin-left: -20px;
+  position: relative;
+  transition: all .3s;
+  transform: rotate(180deg);
+}
+
+.accordion__body {
+  padding: 50px 60px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 5px 5px 1px rgba(67,151,234,.3);
+}
+.accordion__body p {
+  line-height: 25px;
+  font-size: var(--font-size-20px);
+  color: currentColor;
+}
+.rotate {
+  display: flex;
+  transform: rotate(0deg) !important;
+}
+.form {
+  width: calc(466px - 128px);
+  height: max-content;
+  padding: 60px 64px;
+  text-align: center;
+  box-shadow: 0 5px 10px 1px rgba(67,151,234,.3);
+  border-radius: 15px;
+}
+.form .title {
+  font-size: var(--font-size-36px);
+  width: max-content;
+  margin-bottom: 30px;
+}
+.form .form-page__wrap {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.form .form-page__wrap .item-form {
+  max-width: 100%;
+  width: 100%;
+}
+.form .btn-1 {
+  height: 70px;
+  max-width: 290px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.body-cosmetology .form {
+  box-shadow: 0 5px 10px 1px rgba(210, 153, 143, .3);
+}
+.body-cosmetology .accordion__head {
+  background: var(--color-main-cosmetology);
+  box-shadow: 0 5px 5px 1px rgba(210, 153, 143, .3);
+}
+.body-cosmetology .accordion__head_wrap {
+  background: var(--gradient-card-cosmetology);
+}
+.body-cosmetology .accordion__head_wrap::before {
+  background: var(--color-main-cosmetology);
+}
+.body-cosmetology .accordion__body {
+  box-shadow: 0 5px 5px 1px rgba(210, 153, 143, .3);
+}
+.body-cosmetology .question-answer__toggle-pages {
+  box-shadow: 0 0px 5px 1px rgba(210, 153, 143, .3);
+}
+.body-cosmetology .question-answer__toggle-pages a {
+  color: var(--color-main-cosmetology);
+}
+.body-cosmetology .question-answer__toggle-pages a::before {
+  background: var(--color-main-cosmetology);
+}
+.body-cosmetology .question-answer__toggle-pages a.active {
+  color: var(--color-white);
+  background: var(--color-main-cosmetology)
 }
