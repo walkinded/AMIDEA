@@ -618,4 +618,8 @@
   .accordion__body {
     padding: 20px;
   }
+  .accordion__body li {
+    flex-direction: column;
+    text-align: center;
+  }
 }

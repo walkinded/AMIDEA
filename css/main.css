@@ -2669,10 +2669,12 @@ footer {
 }
 
 
-.question-answer {
+.question-answer,
+.price-list {
   padding: 0 0 40px;
 }
-.question-answer .title {
+.question-answer .title,
+.price-list .title{
   margin-bottom: 40px;
 }
 .question-answer__toggle-pages {
@@ -2848,4 +2850,19 @@ footer {
 .body-cosmetology .question-answer__toggle-pages a.active {
   color: var(--color-white);
   background: var(--color-main-cosmetology)
+}
+
+.accordion__body li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #d0d3d8;
+  padding: 20px 0 ;
+}
+.accordion__body li:first-child {
+  padding: 0px 0 20px;
+}
+.accordion__body li:last-child {
+  border-bottom: 0;
 }
