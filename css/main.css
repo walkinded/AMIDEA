@@ -572,7 +572,7 @@ footer {
 .menu-nav a {
   color: var(--color-white);
   font-weight: var(--font-medium);
-  font-size: var(--font-size-20px);
+  font-size: var(--font-size-16px);
 }
 .menu-nav ul {
   margin-bottom: 30px;
@@ -2973,4 +2973,29 @@ footer {
 .body-cosmetology .gradient-icon_circle.gradient-icon::after {
   background: var(--color-main-cosmetology);
   box-shadow: 0 0px 5px 1px rgba(210, 153, 143, .3);
+}
+.online-reg {
+  display: none;
+  padding: 40px 61px;
+  background: var(--color-white);
+  color: currentColor;
+}
+.online-reg .title {
+  font-size: var(--font-size-45px);
+  margin: 0 auto 30px;
+}
+.fancybox-skin {
+  padding: 0;
+  margin: 0;
+}
+
+.our-reviews_color {
+  background: #ecf6ff;
+}
+
+.our-reviews_color .img-absolute {
+  left: 80px;
+}
+.title-reviews {
+  margin-bottom: 40px;
 }
