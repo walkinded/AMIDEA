@@ -330,5 +330,77 @@ $('#accordion .accordion__wrap .accordion__head').find('.accordion__body').slide
       },
     ]
   });
+
+  $('.sertif-gallery__slider').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 5,
+    speed: 1000,
+    infinity: true,
+    // autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: true,
+          slidesToShow: 4,
+          // speed: 1000,
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+          // speed: 1000,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+          // speed: 1000,
+        }
+      },
+    ]
+  });
+
+  $('.gallery__slider').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 4,
+    speed: 1000,
+    infinity: true,
+    // autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+          // speed: 1000,
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          // speed: 1000,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+          // speed: 1000,
+        }
+      },
+    ]
+  });
   // END
 }); 

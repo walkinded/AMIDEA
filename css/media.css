@@ -132,6 +132,7 @@
   .service-catalog__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
 @media screen and ( max-width: 991px ) { 
   .top-procedures__item {
@@ -176,6 +177,26 @@
   .question-answer__wrap {
     flex-direction: column;
     align-items: center;
+  }
+  .our-experts .subtitle {
+    flex-direction: column;
+    gap: 20px;
+    align-items: initial;
+
+  }
+  .our-experts .subtitle .btn-blue {
+    margin: 0 auto;
+  }
+  .article__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .similar-articles {
+    gap: 20px;
+  }
+  .article__content {
+    grid-column: 1;
   }
 }
 /* #005E58 */
@@ -646,5 +667,39 @@
   }
   .show-more {
     bottom: 43px;
+  }
+  .about-us__wrap {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .sertif-gallery, .main-gallery {
+    padding: 20px 0;
+  }
+  .article__content .title {
+    margin-bottom: 20px;
+  }
+  .arlicle__title-img {
+    height: 250px
+  }
+  .arlicle__title-img::before {
+    background: linear-gradient( 
+      180deg, rgba(255,255,255,0) 1%, rgba(255,255,255,.9) 20%);
+  }
+  .title-img__text {
+    padding: 10px;
+  }
+  .main-article h4 {
+    margin: 20px 0 35px;
+  }
+  .main-article h3 {
+    padding: 20px 0 10px;
+  }
+  .main-article blockquote,
+  .main-article img {
+    margin: 20px 0;
+  }
+  .main-article img {
+    height: 200px;
   }
 }
