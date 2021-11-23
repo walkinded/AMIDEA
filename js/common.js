@@ -140,6 +140,13 @@ $('#accordion .accordion__wrap .accordion__head').find('.accordion__body').slide
     $(this).siblings('.service-catalog__item ul').toggleClass('active');
     $(this).parent('.service-catalog__item').toggleClass('active');
   });
+
+  $('.service-list__item-inner .btn-link').on('click', function() {
+    $('.service-list__item').removeClass('active');
+    $('.service-list__item .btn-link').css('display', 'flex');
+    $(this).parent().parent().parent().toggleClass('active');
+    $(this).css('display', 'none');
+  });
 /* ==================== to up scroller ==================== */ 
   $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
