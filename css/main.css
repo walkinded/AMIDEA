@@ -391,6 +391,7 @@ footer {
   font-size: 14px;
   color: var(--color-blue);
   font-weight: var(--font-demi);
+  cursor: pointer;
 }
 .btn-link_red {
   color: #be6465;
@@ -3264,6 +3265,32 @@ footer {
   top: 10px;
 }
 
+.body-cosmetology {}
+.body-cosmetology .main-article ol li::before {
+  color: var(--color-main-cosmetology);
+}
+.body-cosmetology .main-article ul li::before {
+  background: var(--color-main-cosmetology);
+}
+.body-cosmetology .main-article blockquote {
+  border-left: 2px solid var(--color-main-cosmetology);
+}
+.body-cosmetology .main-article h4::before {
+  background: var(--color-main-cosmetology)
+}
+.body-cosmetology .main-article a {
+  color: var(--color-main-cosmetology);
+}
+.body-cosmetology .our-works__service-name {
+  box-shadow: 0 0px 10px 1px rgba(112,45,44,.4);
+}
+.body-cosmetology .btn-link {
+  color: var(--color-main-cosmetology);
+}
+.body-cosmetology .btn-link::after,
+.body-cosmetology .btn-link::before {
+  background: var(--color-main-cosmetology);
+}
 .similar-articles {
   display: flex;
   flex-direction: column;
@@ -3283,10 +3310,14 @@ footer {
   height: 324px;
 }
 
+/*  */
+.service-banner {
+  padding: 40px 0;
+}
 .service-banner__box {
   padding: 80px 60px;
   height: calc(522px - 160px);
-  background: #4a4b4d;
+  background: url(../img/Baner-Amideya.jpg) no-repeat center top / cover;
   border-radius: 15px;
 }
 .service-banner__box .title {
@@ -3311,7 +3342,9 @@ footer {
 
 
 .main-service {
+  padding-bottom: 70px;
 }
+
 .main-service__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -3423,7 +3456,7 @@ footer {
   position: relative;
   padding: 30px 60px;
   border-radius: 0 0 15px 15px;
-  box-shadow: 0 5px 5px 1px rgb(67 151 234 / 30%);
+  box-shadow: 0 5px 5px 1px rgba(67, 151, 234, 30%);
 }
 
 .item-inner__body .accordion__body ul {
@@ -3456,10 +3489,84 @@ footer {
   color: currentColor;
 }
 .item-inner__body .accordion__body li:hover::before{
-  background: var(--text-color);
+  background: currentColor;
 }
+
+.body-cosmetology {}
+.body-cosmetology  .item-inner__body .accordion__body {
+  box-shadow: 0 10px 10px 1px rgba(112,45,44,.4);
+}
+.body-cosmetology  .item-inner__header p {
+  color: var(--color-main-cosmetology);
+}
+.body-cosmetology  .service-list__item.active {
+  background: var(--color-main-cosmetology);
+}
+.body-cosmetology .service-list__item.active .service-list__item-inner {
+  background: var(--gradient-card-cosmetology);
+}
+.body-cosmetology .service-list__item.active .service-list__item-inner::before {
+  background: var(--color-main-cosmetology);
+}
+.body-cosmetology .service-list__item-inner.active .service-list__item {
+  background: var(--color-main-cosmetology);
+}
+.body-cosmetology .service-list__item {
+  box-shadow: 0 0px 10px 1px rgba(112,45,44,.4);
+}
+
 .main-service__desc {
   grid-column: 2 / -1;
 }
-
-
+.main-service__desc .title {
+  font-size: var(--font-size-48px);
+  font-weight: var(--font-demi);
+  color: currentColor;
+}
+.main-service__desc .main-article ul li {
+  padding: 10px 0 10px 25px;
+}
+.main-service__desc .main-article ul li::before {
+  top: 19px;
+}
+.main-service__desc .main-article img {
+  object-fit: contain;
+  border-radius: 0;
+  max-height: 390px;
+  height: auto;
+}
+.video-box {
+  position: relative;
+  max-width: 100%;
+  width: auto;
+  height: 602px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.video-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  z-index: -1;
+}
+.video-box a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.video-box .gradient-icon__wrrap {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: max-content;
+  margin-bottom: 0;
+}
+.btn-view__icon {
+  position: relative;
+  z-index: 1;
+  color: var(--color-white);
+  font-size: 25px;
+}
